@@ -7,17 +7,18 @@
     <b-tab title="Disabled" disabled><p>I'm a disabled tab!</p></b-tab>
   </b-tabs> -->
 
-  <LinksTabsVue doi="10.21978/b36g-xg54" />
+  <!-- <LinksTabsVue doi="10.21978/b36g-xg54" /> -->
 
 
 </div>
     <h1>{{ msg }}</h1>
 
 
-              <LinksTabsVue doi="10.5194/acp-15-13023-2015" />
-<BadgeBuilder/>
+              <!-- <LinksTabsVue doi="10.5194/acp-15-13023-2015" />
+<BadgeBuilder/> -->
               <!-- <DataciteFooter/> -->
 
+    <DataciteMetadataValidator></DataciteMetadataValidator>
 
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -56,16 +57,17 @@
 </template>
 
 <script>
-import LinksTabsVue from './LinksTabs.vue';
+// import LinksTabsVue from './LinksTabs.vue';
 // import DataciteFooter from './DataciteFooter.vue';
-import BadgeBuilder from './BadgeBuilder.vue';
+// import BadgeBuilder from './BadgeBuilder.vue';
+import DataciteMetadataValidator from './DataciteMetadataValidator.vue'
 
 export default {
   name: 'HelloWorld',
   components:{
-    LinksTabsVue,
+    DataciteMetadataValidator,
     // DataciteFooter,
-    BadgeBuilder,
+    // BadgeBuilder,
     
     },
   props: {
